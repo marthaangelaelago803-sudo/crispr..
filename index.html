@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/style.css">
+  </head>
+
+  <body>
+    <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fbfaff" />
+  <meta name="description" content="Explore the science of CRISPR through a beautiful interactive guide, DNA editing simulation, and knowledge quiz." />
+  <meta property="og:title" content="CRISPR — Edit the Future" />
+  <meta property="og:description" content="A stunning interactive field guide to the science of genome editing." />
+  <title>CRISPR — Edit the Future</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="scroll-progress" class="progress" aria-hidden="true"></div>
+<header class="site-nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#top" aria-label="CRISPR home"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 3c10 2 0 16 10 18M17 3C7 5 17 19 7 21M8 7h8M8 12h8M8 17h8"/></svg></span><span>crispr<b>.</b></span></a>
+    <nav class="nav-links" id="main-nav" aria-label="Main navigation"><a href="#about">The science</a><a href="#lab">Interactive lab</a><a href="#applications">Applications</a><a href="#ethics">Ethics</a><a href="#quiz">Quick quiz</a></nav>
+    <a class="btn nav-cta" href="#lab">Explore the lab <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+<main id="top">
+  <section class="hero" aria-labelledby="hero-title"><div class="container hero-grid">
+    <div class="hero-copy"><span class="pill"><span class="dot"></span> THE INTERACTIVE GENETICS EXPERIENCE</span><h1 id="hero-title">What if we could <span class="gradient-text">edit life?</span></h1><p class="hero-description">Meet CRISPR—the revolutionary gene-editing technology transforming biology. Explore the science, see how it works, and discover what's possible.</p><div class="hero-actions"><a class="btn" href="#lab">Try the interactive lab <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="btn btn-outline" href="#about">Understand CRISPR <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div><div class="hero-bottom"><div class="mini-stat"><strong>2012</strong><span>MAJOR BREAKTHROUGH</span></div><div class="mini-sep"></div><div class="mini-stat"><strong>2020</strong><span>NOBEL PRIZE</span></div><div class="mini-sep"></div><div class="mini-stat"><strong>2023</strong><span>FIRST FDA CRISPR THERAPY</span></div></div></div>
+    <div class="visual-shell" aria-label="Stylized animated DNA double helix illustration" role="img"><div class="visual-outer"><div class="visual-grid"></div><svg id="hero-helix" class="helix-svg" viewBox="0 0 280 410" aria-hidden="true"></svg><div class="visual-center"><strong>DNA</strong><small>CODE OF LIFE</small></div></div><div class="floating-label label-a"><strong><span class="status-light"></span>Cas9 enzyme</strong><small>The molecular scissors</small></div><div class="floating-label label-b"><strong>Guide RNA <span style="color:var(--lime)">↗</span></strong><small>Finds the target</small></div></div>
+  </div></section>
+  <div class="feature-ribbon"><div class="container ribbon-inner">
+    <div class="ribbon-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4c4 4 4 12 0 16M12 4c-4 4-4 12 0 16"/></svg> Discover the science</div><div class="ribbon-divider"></div><div class="ribbon-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 18 18 4m-8 0h8v8M6 5v5m-2-2h5M15 20h5v-5"/></svg> Visualize an edit</div><div class="ribbon-divider"></div><div class="ribbon-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="4" width="14" height="16" rx="2"/><path d="m8 10 2 2 5-5M8 16h8"/></svg> Test your knowledge</div><div class="ribbon-divider"></div><div class="ribbon-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6 5.6 18.4"/></svg> Explore the big questions</div>
+  </div></div>
+  <section id="about" class="section"><div class="container">
+    <div class="section-heading reveal"><div><span class="eyebrow">01 / THE SCIENCE</span><h2>Think of it as <span class="gradient-text">molecular scissors.</span></h2><p class="science-intro">CRISPR originally evolved as part of bacterial defense against viruses. Scientists adapted the CRISPR–Cas9 system to make targeted changes to DNA.</p></div><p>CRISPR stands for <b style="color:var(--text)">clustered regularly interspaced short palindromic repeats</b>. The best-known editing system uses a guide RNA and a cutting enzyme called Cas9.</p></div>
+    <div class="steps">
+      <article class="step-card reveal"><span class="card-number">01 / LOCATE</span><span class="corner">↗</span><div class="step-icon"><svg viewBox="0 0 115 80" fill="none" stroke="currentColor" stroke-width="3"><path d="M10 44c20-33 40 33 60 0S101 11 110 30" stroke-linecap="round"/><path d="M10 23c20 33 40-33 60 0s31 33 40 14" stroke="#86bca4" stroke-linecap="round"/><circle cx="69" cy="34" r="12" fill="#21392b"/><path d="M65 34l3 3 6-7" stroke-width="2.5"/></svg></div><h3>Find the sequence.</h3><p>A guide RNA helps direct the Cas9 protein toward a matching target in the DNA.</p></article>
+      <article class="step-card reveal"><span class="card-number">02 / CUT</span><span class="corner">↗</span><div class="step-icon"><svg viewBox="0 0 115 80" fill="none" stroke="currentColor" stroke-width="3.1" stroke-linecap="round"><path d="M12 20c22 35 40-35 66 0M12 57c22-35 40 35 66 0"/><path d="M77 15l21 25M98 15 77 40" stroke="#d6b0ff"/><circle cx="89" cy="50" r="8" stroke="#d6b0ff"/><path d="m83 40-6-6" stroke="#d6b0ff"/></svg></div><h3>Make a cut.</h3><p>In classic CRISPR–Cas9 editing, Cas9 cuts DNA near the target. Other CRISPR tools can work differently.</p></article>
+      <article class="step-card reveal"><span class="card-number">03 / REPAIR</span><span class="corner">↗</span><div class="step-icon"><svg viewBox="0 0 115 80" fill="none" stroke="currentColor" stroke-width="3"><path d="M11 22c25 35 48-35 90 0M11 56c25-35 48 35 90 0"/><path d="M30 31v18M49 24v32M69 24v32M87 31v18" stroke="#d6b16c"/><circle cx="59" cy="40" r="12" stroke="#f5dc90" stroke-dasharray="3 5"/></svg></div><h3>Let cells repair.</h3><p>Natural repair mechanisms respond to the cut. They can create changes, but results are not always predictable.</p></article>
+    </div>
+  </div></section>
+  <section id="lab" class="section lab-section"><div class="container">
+    <div class="lab-heading reveal"><span class="eyebrow">02 / HANDS-ON EXPLORER</span><h2>Welcome to the <span class="gradient-text">editing lab.</span></h2><p>Step through a simplified, animated model of CRISPR–Cas9. Explore the concept visually—no real DNA or experiments involved.</p></div>
+    <div class="lab-shell reveal"><div class="lab-topbar"><div class="lab-dots"><i></i><i></i><i></i></div><span class="lab-title">CRISPR / VISUAL EXPLORER</span><span class="lab-mode">● SIMULATION MODE</span></div><div class="lab-content">
+      <div class="strand-panel"><div class="strand-head"><div><div class="stage-kicker">DEMO SEQUENCE</div><h3 id="strand-title">Target recognition</h3></div><span>ILLUSTRATIVE ONLY</span></div><div class="dna-pair" id="dna-top" aria-label="Illustrative DNA upper strand"></div><div class="pairs-spine" id="dna-spine" aria-hidden="true"></div><div class="dna-pair" id="dna-bottom" aria-label="Illustrative DNA complementary strand"></div><div class="lab-legend"><span><i class="legend-square"></i> target region</span><span><i class="legend-square edit"></i> cut highlighted</span><span><i class="legend-square done"></i> schematic outcome</span></div></div>
+      <div class="stage-panel"><div class="stage-tabs" role="group" aria-label="Simulation stages"><button class="stage-tab active" data-stage="0" aria-pressed="true"><span class="num">01</span><strong>Locate</strong></button><button class="stage-tab" data-stage="1" aria-pressed="false"><span class="num">02</span><strong>Cut</strong></button><button class="stage-tab" data-stage="2" aria-pressed="false"><span class="num">03</span><strong>Repair</strong></button></div><div class="stage-explanation" aria-live="polite"><strong id="stage-title">Find the target</strong><p id="stage-text">A guide RNA helps the CRISPR complex recognize a matching region in the DNA.</p></div><button class="btn" id="lab-next">Next step <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+    </div><div class="lab-footer"><span class="lab-disclaimer">Educational illustration, not a real gene-editing simulator. Actual CRISPR targeting, cell repair, and outcomes are more complex and require specialized research methods and safeguards.</span><div class="lab-actions"><button class="btn btn-outline btn-small" id="lab-reset">↺ Reset demo</button></div></div></div>
+  </div></section>
+  <section id="applications" class="section"><div class="container"><div class="section-heading reveal"><div><span class="eyebrow">03 / REAL-WORLD IMPACT</span><h2>Tiny tools. <span class="gradient-text">Massive possibilities.</span></h2></div><p>From laboratories to medicine and agriculture, CRISPR is changing how researchers study and sometimes modify living systems.</p></div>
+    <div class="applications-grid"><article class="app-card medicine reveal"><div class="app-art"><svg viewBox="0 0 250 250" fill="none"><circle cx="151" cy="93" r="77" stroke="#dd9cc1" stroke-width="1" opacity=".5"/><circle cx="151" cy="93" r="48" stroke="#e5afdb" stroke-width="1.5" opacity=".8"/><circle cx="151" cy="93" r="25" fill="#d7aed0" opacity=".4"/><path d="M151 57v72M115 93h72" stroke="#ffdbed" stroke-width="6" stroke-linecap="round"/><g fill="#e9bdd8"><circle cx="35" cy="64" r="6"/><circle cx="220" cy="153" r="9"/><circle cx="89" cy="189" r="5"/></g></svg></div><div class="top"><span>01 / HUMAN HEALTH</span></div><div class="bottom"><h3>Medicine.</h3><p>Developing treatments for genetic disorders and investigating new therapeutic approaches.</p></div></article>
+    <article class="app-card farming reveal"><div class="app-art"><svg viewBox="0 0 250 250" fill="none" stroke="#aedaa4" stroke-width="3"><path d="M119 199c-2-52 8-96 55-142"/><path d="M146 131C97 63 61 81 61 81c-1 44 41 69 85 50ZM169 85c7-45 44-57 44-57 4 34-12 57-44 57ZM126 166c-60-34-87-11-87-11 19 34 56 37 87 11Z" fill="#7bda91" fill-opacity=".24"/><path d="M176 61c-33 22-48 62-57 88"/><circle cx="192" cy="188" r="36" stroke="#e3ec9d" opacity=".6"/></svg></div><div class="top"><span>02 / FOOD SYSTEMS</span></div><div class="bottom"><h3>Agriculture.</h3><p>Researching crop traits such as resilience, quality, and resistance to some diseases.</p></div></article>
+    <article class="app-card research reveal"><div class="app-art"><svg viewBox="0 0 250 250" fill="none" stroke="#aab4ff" stroke-width="3"><circle cx="152" cy="100" r="74" stroke-dasharray="5 12" opacity=".8"/><circle cx="152" cy="100" r="33" fill="#a5b3f7" fill-opacity=".15"/><path d="M104 36c74 21 48 94 102 128M199 31c-80 40-23 99-96 137"/><circle cx="104" cy="36" r="8" fill="#b9b1ff"/><circle cx="206" cy="164" r="8" fill="#b9b1ff"/><circle cx="199" cy="31" r="7" fill="#a0e5db"/></svg></div><div class="top"><span>03 / DISCOVERY</span></div><div class="bottom"><h3>Research.</h3><p>Studying what genes do by observing changes when their function is altered.</p></div></article></div>
+    <div class="proof-banner reveal"><div class="copy"><strong>A milestone in medicine: CASGEVY</strong><p>The FDA first approved the CRISPR-based therapy CASGEVY in 2023 for sickle cell disease. It is also approved for transfusion-dependent beta-thalassemia. Approval details vary by indication and jurisdiction.</p></div><a href="https://www.fda.gov/vaccines-blood-biologics/casgevy" target="_blank" rel="noopener noreferrer">FDA source ↗</a></div>
+  </div></section>
+  <section class="section timeline-section"><div class="container timeline-wrap"><div class="timeline-left reveal"><span class="eyebrow">04 / A BREAKTHROUGH STORY</span><h2>Decades in the <span class="gradient-text">making.</span></h2><p>CRISPR didn't appear overnight. A series of discoveries transformed an unusual bacterial defense mechanism into a powerful tool for biology.</p></div><div class="timeline-list">
+    <div class="milestone reveal"><time>1987</time><h3>A curious discovery</h3><p>Researchers report unusual repeated DNA sequences in bacteria, an early clue to what would later be called CRISPR.</p></div>
+    <div class="milestone reveal"><time>2012</time><h3>A programmable tool</h3><p>Emmanuelle Charpentier and Jennifer Doudna help demonstrate how CRISPR–Cas9 can be adapted for targeted DNA cutting.</p></div>
+    <div class="milestone reveal"><time>2020</time><h3>Nobel Prize in Chemistry</h3><p>Charpentier and Doudna receive the Nobel Prize for developing a method for genome editing.</p></div>
+    <div class="milestone reveal"><time>2023</time><h3>A treatment milestone</h3><p>The FDA grants its first approval for a CRISPR-based medicine, CASGEVY, for sickle cell disease.</p></div>
+  </div></div></section>
+  <section id="ethics" class="section"><div class="container"><div class="section-heading reveal"><div><span class="eyebrow">05 / ETHICS & RESPONSIBILITY</span><h2>With great power <span class="gradient-text">comes big questions.</span></h2></div><p>Scientific possibility isn't the same as ethical permission. Genome editing requires careful oversight, transparency, and public discussion.</p></div>
+    <div class="ethics-grid"><article class="ethic-card reveal"><div class="ethic-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c4-3 8-6 8-12V5l-8-3-8 3v5c0 6 4 9 8 12Z"/><path d="m8 12 3 3 5-6"/></svg></div><h3>The potential</h3><p>Carefully developed genome-editing approaches may offer meaningful benefits, but evidence is needed for each application.</p><ul><li>Treating certain serious genetic diseases</li><li>Understanding how genes contribute to illness</li><li>Studying and improving crops</li></ul></article>
+    <article class="ethic-card warning reveal"><div class="ethic-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 2 21h20L12 3Z"/><path d="M12 9v5m0 4h.01"/></svg></div><h3>The responsibility</h3><p>Editing DNA can have unintended effects. Some applications create especially serious questions about future generations and equity.</p><ul><li>Safety and off-target changes</li><li>Access, fairness, and informed consent</li><li>Heritable edits and oversight</li></ul></article></div>
+  </div></section>
+  <section id="quiz" class="section quiz-section"><div class="container quiz-layout"><div class="quiz-intro reveal"><span class="eyebrow">06 / TEST YOUR KNOWLEDGE</span><h2>Think you've <span class="gradient-text">got the code?</span></h2><p>Take this four-question mini quiz and see how much you've learned. It's a quick, no-pressure way to review the essentials.</p><div class="quiz-deco" aria-hidden="true"><svg viewBox="0 0 150 150" fill="none" stroke="currentColor" stroke-width="1"><circle cx="75" cy="75" r="70" stroke-dasharray="5 7"/><circle cx="75" cy="75" r="48"/><circle cx="75" cy="75" r="27"/><path d="M75 0v150M0 75h150M21 21l108 108M129 21 21 129"/></svg></div></div>
+  <div class="quiz-panel reveal"><div id="quiz-playing"><div class="quiz-top"><span>CRISPR KNOWLEDGE CHECK</span><span class="quiz-count" id="quiz-count">01 / 04</span></div><div class="quiz-bar"><i id="quiz-progress"></i></div><h3 id="quiz-question">What helps guide Cas9 to a target in the DNA?</h3><div class="choices" id="quiz-options"></div><p id="quiz-response" class="quiz-response" aria-live="polite"></p><button class="btn quiz-next" id="quiz-next" style="display:none">Next question →</button></div><div class="quiz-result" id="quiz-result" hidden><div class="score-ring"><strong id="quiz-score">0/4</strong><span>YOUR SCORE</span></div><h3 id="quiz-feedback">Nice work!</h3><p id="quiz-summary">You explored the amazing science of CRISPR.</p><button class="btn" id="quiz-restart">Try again ↻</button></div></div>
+  </div></section>
+</main>
+<section class="sources" id="sources"><div class="container"><div class="sources-head"><div><span class="eyebrow">KEEP EXPLORING</span><h2>Science-backed sources.</h2></div><p class="muted" style="font-size:12px">Trusted resources to learn more, read the details, and verify key claims.</p></div><div class="sources-list">
+  <a href="https://www.genome.gov/genetics-glossary/CRISPR" target="_blank" rel="noopener noreferrer"><strong>What is CRISPR?</strong><span>National Human Genome Research Institute</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+  <a href="https://www.genome.gov/about-genomics/policy-issues/Genome-Editing/How-genome-editing-works" target="_blank" rel="noopener noreferrer"><strong>How genome editing works</strong><span>National Human Genome Research Institute</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+  <a href="https://www.nobelprize.org/prizes/chemistry/2020/summary/" target="_blank" rel="noopener noreferrer"><strong>2020 Nobel Prize in Chemistry</strong><span>The Nobel Prize</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+  <a href="https://www.who.int/publications/i/item/9789240030404" target="_blank" rel="noopener noreferrer"><strong>Human genome editing ethics</strong><span>World Health Organization</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+</div></div></section>
+   <!-- ABOUT -->
+    <section class="about-section" id="about">
+      <div class="section-wrap section-block">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">BEHIND THE WEBSITE</p>
+            <h2>Curiosity built this space.</h2>
+          </div>
+          <p>Created by Grade 10-Amethyst STE students as a Science 10 Performance Task.</p>
+        </div>
+
+        
+<div class="creator-grid">
+
+  <div class="creator-profile">
+    <img src="https://raw.githubusercontent.com/marthaangelaelago803-sudo/crispr-creator-phots-1-/main/creator1.jpg" alt="Martha Angela">
+    <h4>Martha Angela A. Elago</h4>
+  </div>
+
+  <div class="creator-profile">
+    <img src="https://raw.githubusercontent.com/marthaangelaelago803-sudo/crispr-creator-phots-1-/main/creator2.jpg" alt="Mike Angelo">
+    <h4>Mike Angelo S. Angcog</h4>
+  </div>
+
+  <div class="creator-profile">
+    <img src="https://raw.githubusercontent.com/marthaangelaelago803-sudo/crispr-creator-phots-1-/main/creator3.jpg" alt="Nash Loujie">
+    <h4>Nash Loujie P. Bonita</h4>
+  </div>
+
+  <div class="creator-profile">
+    <img src="https://raw.githubusercontent.com/marthaangelaelago803-sudo/crispr-creator-phots-1-/main/creator4.jpg" alt="Kissia Nathalie">
+    <h4>Kissia Nathalie N. Dagang</h4>
+  </div>
+
+  <div class="creator-profile">
+    <img src="https://raw.githubusercontent.com/marthaangelaelago803-sudo/crispr-creator-phots-1-/main/creator5.jpg" alt="Cassandra">
+    <h4>Cassandra B. Givera</h4>
+  </div>
+
+  <div class="creator-profile">
+    <img src="https://raw.githubusercontent.com/marthaangelaelago803-sudo/crispr-creator-phots-1-/main/creator6.jpg" alt="Empress">
+    <h4>Empress A. Oclarit</h4>
+  </div>
+
+</div>
+</div>
+
+
+          <article class="about-card about-website">
+            <div class="about-avatar">💜</div>
+            <p class="eyebrow">ABOUT CRISPR LAB</p>
+            <h3>Learn science. Ask questions. Think critically.</h3>
+
+            <p>
+              CRISPR Lab introduces the basic science of gene editing, its possible
+              applications, real-world evidence, and ethical and environmental considerations.
+            </p>
+
+            <p>
+              The lessons are simplified for learning. They do not replace scientific
+              publications, professional medical advice, or laboratory training.
+            </p>
+
+            <div class="source-links">
+              <a href="https://www.fda.gov/news-events/press-announcements/fda-approves-first-gene-therapies-treat-patients-sickle-cell-disease"
+                target="_blank" rel="noopener noreferrer">FDA: CRISPR-based treatment ↗</a>
+              <a href="https://www.who.int/publications/i/item/9789240030381"
+                target="_blank" rel="noopener noreferrer">WHO: Human genome editing ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+    
+  
+</body>
+</html>
+
+<footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#top"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 3c10 2 0 16 10 18M17 3C7 5 17 19 7 21M8 7h8M8 12h8M8 17h8"/></svg></span><span>crispr<b>.</b></span></a><span>Made for curious minds. Educational content only.</span><span>© <span id="year"></span> CRISPR Explorer</span></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
+    <script src="/script.js"></script>
+  </body>
+
+</html>
